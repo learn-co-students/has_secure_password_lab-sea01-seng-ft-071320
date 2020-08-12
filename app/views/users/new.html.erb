@@ -1,0 +1,9 @@
+<header>
+  <h1>Welcome! New Here?</h1>
+  <h3>Please complete the form below to create your account:</h2>
+</header>
+
+<main>
+  <%= render partial: 'partials/login_form', locals: { submit_text: 'Sign Up' } %>
+  <p>Already have an account? <%= link_to 'Sign in here.', login_path %>
+</main>
